@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateCase">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <Button
+            android:id="@+id/add_evidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Evidence"
+            android:onClick="addEvidence"/>
+
+
+        <LinearLayout
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:orientation = "horizontal" >
+            <TextView
+                android:id = "@+id/type_text"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "0.5"
+                android:ellipsize = "end"
+                android:singleLine = "true"
+                android:text = "Type*"  />
+
+
+            <Spinner
+                android:id="@+id/crime_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Type"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft = "20dip"
+                android:hint = "state"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id = "@+id/whitespace_text1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "-----------------------------------------------------------------------------------"  />
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Street" />
+
+        <TextView
+            android:id = "@+id/whitespace_text2"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "-----------------------------------------------------------------------------------"  />
+
+        <EditText
+            android:id="@+id/suburb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Suburb" />
+
+        <TextView
+            android:id = "@+id/whitespace_text3"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "-----------------------------------------------------------------------------------"  />
+
+        <TextView
+            android:id = "@+id/whitespace_text5"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+        <LinearLayout
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:orientation = "horizontal" >
+            <TextView
+                android:id = "@+id/city_text"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "1"
+                android:text = "City*"  />
+
+
+            <Spinner
+                android:id="@+id/City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/City"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint = "state"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id = "@+id/whitespace_text6"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+
+        <TextView
+            android:id = "@+id/whitespace_text4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "-----------------------------------------------------------------------------------"  />
+        <TextView
+            android:id = "@+id/whitespace_text7"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+        <TextView
+            android:id = "@+id/Time_text"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "Time"  />
+
+
+        <LinearLayout
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity="center"
+            android:orientation = "horizontal" >
+            <TextView
+                android:id = "@+id/Hour_text"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "0.5"
+                android:ellipsize = "end"
+                android:singleLine = "true"
+                android:text = "Hour*"  />
+
+
+            <Spinner
+                android:id="@+id/Hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Hour"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft = "20dip"
+                />
+            <TextView
+                android:id = "@+id/Minute_text"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "0.5"
+                android:ellipsize = "end"
+                android:singleLine = "true"
+                android:text = "Minute*"  />
+
+
+            <Spinner
+                android:id="@+id/Minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Minute"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft = "20dip"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id = "@+id/whitespace_text8"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Description" />
+
+        <Switch
+            android:id="@+id/anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Anonymous" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background = "#FF0000"
+            android:onClick="submit"
+            android:text="submit" />
+        <Button
+            android:id="@+id/ipAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background = "#b5c5dc"
+            android:text="Set your IP address " />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

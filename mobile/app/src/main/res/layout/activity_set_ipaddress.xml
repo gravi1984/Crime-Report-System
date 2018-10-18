@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetIPAddress">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/IPAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="IP Address eg.192.168.1.1" />
+        <Button
+            android:id="@+id/setUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background = "#FF0000"
+            android:onClick="setup"
+            android:text="submit this IP Address" />
+        <Button
+            android:id="@+id/cancel_setUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background = "#22ede9e9"
+            android:onClick="cancelSetup"
+            android:text="Cancel" />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

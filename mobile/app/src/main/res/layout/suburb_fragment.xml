@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/suburb_chart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:id="@+id/suburb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suburb_chart"
+            android:layout_centerInParent="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/suburb_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suburb_text"
+            android:maxLength="5"
+            android:layout_centerInParent="true"
+            android:paddingTop="50dp"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/back_to_view_select_from_suburb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suburb_text1"
+            android:text="Back" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
