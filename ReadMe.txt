@@ -4,7 +4,8 @@ The project contains both Website includes front-end and back-end and also a mob
 The "master" branch contains two folders for storing website and mobile app seperately.
 
 We also created two "brances" to push and track those two separate project.
-"MobileApp" is the branch for the mobile application, and "Web" is the branch for website front-end, back-end as well as api interface for mobile app.
+"MobileApp" is the branch for the mobile application, 
+"Web" is the branch for website front-end, back-end as well as api interface for mobile app.
 
 -------------------------------------------------------------------------------------------------
 Cheers.
